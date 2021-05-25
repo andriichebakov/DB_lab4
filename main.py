@@ -124,7 +124,7 @@ def insert_data(lst, year, collection1, collection2, logs_f):
 
 
 def write_result(collection):
-    with open("Task_var5CPract4.csv", "w", newline="") as file:
+    with open("answer.csv", "w", newline="") as file:
         writer = csv.writer(file)
         result = collection.aggregate([
             {"$match": {"histTestStatus": "Зараховано"}},
